@@ -99,10 +99,6 @@ public class FileHandling {
 	
 }
   
-  
- 
-    
-
 public static void View_All_Details() throws IOException {
     	BufferedReader BfrRd = new BufferedReader( new FileReader("records.txt") );
     		
