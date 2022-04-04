@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <form #loginform="ngForm"  (ngSubmit)="Category()">
+    <div class="form-group">
+      <label for="name"><h2><i><b>Name:-</b></i></h2></label>
+      <input type="name" class="form-control" placeholder="Enter Name" name="name"[(ngModel)]="category.name">
+    </div>
+    <div class="form-group">
+      <label for="product"><h2><i><b>Product:-</b></i></h2></label>
+      <input type="product" class="form-control" placeholder="Enter Product" name="product"[(ngModel)]="category.product">
+    </div>
+    <br>
+    <button type="submit" class="btn btn-success"><h5><b>Add</b></h5></button>
+  </form>
+</div>
+<small clas="text-danger">{{msg}}</small>
+</body>
+</html>
